@@ -2,9 +2,9 @@
 
 num = int(input("Enter a number: ")) 
 if num % 2 != 0: 
-    print("You entered an odd number. ") 
+    print(num, "is an odd number. ") 
 else: 
-    print("You entered an even number. ")
+    print(num, "is an even number. ")
     
 #2
 
@@ -17,5 +17,14 @@ else:
     
 #3
 
-
+def Fibonacci(n):
+    n = (input("Enter a Fibonacci index: ")) 
+    if n <= 0:
+        print("Incorrect input")
+    elif n == 1 or n == 2:
+        return (1)
+    else:
+        return( (Fibonacci-1)+(Fibonacci-2))
+        
+print (Fibonacci(n))
     
