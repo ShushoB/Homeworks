@@ -55,3 +55,32 @@ print ("Percentage of correct answers is: ", count/4*100,"%")
 
 
 #4
+n= int(input("Enter the size of your matrix:"))
+  
+def rotateMatrix(matrix):
+    i = n - 1; 
+    while(i >= 0):
+        j = n - 1;
+        while(j >= 0):
+            print(matrix[i][j], end = " ");
+            j = j - 1;
+        print();
+        i = i - 1;
+
+matrix = []
+print("Enter the matrix:")
+
+for i in range(n):     
+    a =[]
+    for j in range(n):   
+         a.append(int(input()))
+    matrix.append(a)
+print("The matrix you entered is:")
+for i in range(n):
+    for j in range(n):
+        print(matrix[i][j], end = " ")
+    print()
+    
+print("The same matrix rotated by 180 degrees will be:")
+
+rotateMatrix(matrix);
